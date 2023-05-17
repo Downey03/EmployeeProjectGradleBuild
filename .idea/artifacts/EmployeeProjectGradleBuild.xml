@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="EmployeeProjectGradleBuild">
+    <output-path>$PROJECT_DIR$/out/artifacts/EmployeeProjectGradleBuild</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="EmployeeProjectGradleBuild" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
