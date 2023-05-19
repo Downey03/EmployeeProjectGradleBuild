@@ -18,7 +18,7 @@ public class RemoveAccountController extends HttpServlet {
 
     protected void removeAccount(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try{
-            serviceInstance.removeEmployee((int)req.getSession().getAttribute("id"));
+            serviceInstance.removeEmployee((int)req.getSession().getAttribute("sessionId"));
         }catch (Exception e){
             req.setAttribute("msg",e.getMessage());
             req.getRequestDispatcher("index.jsp").forward(req,resp);

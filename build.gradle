@@ -25,16 +25,16 @@ apply plugin: 'com.google.cloud.tools.appengine'  // App Engine tasks
 dependencies {
     implementation 'com.google.appengine:appengine-api-1.0-sdk:+'  // Latest App Engine Api's
     providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
-
+    implementation platform('com.google.cloud:libraries-bom:26.15.0')
+    implementation 'com.google.cloud:google-cloud-datastore'
     implementation 'jstl:jstl:1.2'
 }
 
 
-
 appengine {  // App Engine tasks configuration
     deploy {   // deploy configuration
-        projectId = 'tidy-campaign-386810'
-        version = '1'
+        projectId = 'internship-full'
+        version = 'karthick2'
     }
 }
 

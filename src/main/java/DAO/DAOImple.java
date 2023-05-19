@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DAOImple implements DAOInterface{
-    private int id = 1  ;
+    private int id = 1;
     private HashMap<Integer,Employee> getDataBase(){
         return Data.getDatabase();
     }
