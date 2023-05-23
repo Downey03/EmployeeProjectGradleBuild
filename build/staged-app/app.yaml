@@ -6,7 +6,7 @@ derived_file_type:
 threadsafe: True
 auto_id_policy: default
 beta_settings:
-  'source_reference': 'https://github.com/Downey03/EmployeeProjectGradleBuild.git#71af217017ecf047af3b005ee885be3c65022871'
+  'source_reference': 'https://github.com/Downey03/EmployeeProjectGradleBuild.git#496859d7b34afd0c6e5102532993267edc8bbecd'
 api_version: 'user_defined'
 handlers:
 - url: (/.*)
@@ -28,6 +28,18 @@ handlers:
   login: optional
   secure: optional
 - url: .*\.jsp
+  script: unused
+  login: optional
+  secure: optional
+- url: /DisplayDetailsController
+  script: unused
+  login: optional
+  secure: optional
+- url: /DisplayController
+  script: unused
+  login: optional
+  secure: optional
+- url: /UpdateController
   script: unused
   login: optional
   secure: optional

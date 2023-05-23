@@ -28,6 +28,8 @@ dependencies {
     implementation platform('com.google.cloud:libraries-bom:26.15.0')
     implementation 'com.google.cloud:google-cloud-datastore'
     implementation 'jstl:jstl:1.2'
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
 }
 
 
@@ -35,6 +37,10 @@ appengine {  // App Engine tasks configuration
     deploy {   // deploy configuration
         projectId = 'internship-full'
         version = 'karthick2'
+    }
+    run{
+        port = 8080
+        projectId = 'internship-full'
     }
 }
 

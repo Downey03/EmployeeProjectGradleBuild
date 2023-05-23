@@ -51,5 +51,32 @@
         <url-pattern>/RemoveAccountController</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>UpdateController</servlet-name>
+        <servlet-class>Controller.UpdateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateController</servlet-name>
+        <url-pattern>/UpdateController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayController</servlet-name>
+        <servlet-class>Controller.DisplayController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayController</servlet-name>
+        <url-pattern>/DisplayController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayDetailsController</servlet-name>
+        <servlet-class>Controller.DisplayDetailsController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayDetailsController</servlet-name>
+        <url-pattern>/DisplayDetailsController</url-pattern>
+    </servlet-mapping>
+
 </web-app>
 

@@ -11,6 +11,36 @@
     <!-- JSPC servlet mappings start -->
 
     <servlet>
+        <servlet-name>org.apache.jsp.signup_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.signup_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.profile_002dpage_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.profile_002dpage_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.msg_002ddisplay_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.msg_002ddisplay_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.admin_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.admin_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.redirect_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.redirect_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>org.apache.jsp.index_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.index_jsp</servlet-class>
+    </servlet>
+
+    <servlet>
         <servlet-name>org.apache.jsp.login_jsp</servlet-name>
         <servlet-class>org.apache.jsp.login_jsp</servlet-class>
     </servlet>
@@ -26,29 +56,39 @@
     </servlet>
 
     <servlet>
-        <servlet-name>org.apache.jsp.index_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.index_jsp</servlet-class>
+        <servlet-name>org.apache.jsp.admin_002ddetails_jsp</servlet-name>
+        <servlet-class>org.apache.jsp.admin_002ddetails_jsp</servlet-class>
     </servlet>
 
-    <servlet>
-        <servlet-name>org.apache.jsp.redirect_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.redirect_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>org.apache.jsp.msg_002ddisplay_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.msg_002ddisplay_jsp</servlet-class>
-    </servlet>
-
-    <servlet>
+    <servlet-mapping>
         <servlet-name>org.apache.jsp.signup_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.signup_jsp</servlet-class>
-    </servlet>
+        <url-pattern>/signup.jsp</url-pattern>
+    </servlet-mapping>
 
-    <servlet>
-        <servlet-name>org.apache.jsp.update_jsp</servlet-name>
-        <servlet-class>org.apache.jsp.update_jsp</servlet-class>
-    </servlet>
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.profile_002dpage_jsp</servlet-name>
+        <url-pattern>/profile-page.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.msg_002ddisplay_jsp</servlet-name>
+        <url-pattern>/msg-display.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.admin_jsp</servlet-name>
+        <url-pattern>/admin.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.redirect_jsp</servlet-name>
+        <url-pattern>/redirect.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>org.apache.jsp.index_jsp</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>org.apache.jsp.login_jsp</servlet-name>
@@ -66,28 +106,8 @@
     </servlet-mapping>
 
     <servlet-mapping>
-        <servlet-name>org.apache.jsp.index_jsp</servlet-name>
-        <url-pattern>/index.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.redirect_jsp</servlet-name>
-        <url-pattern>/redirect.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.msg_002ddisplay_jsp</servlet-name>
-        <url-pattern>/msg-display.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.signup_jsp</servlet-name>
-        <url-pattern>/signup.jsp</url-pattern>
-    </servlet-mapping>
-
-    <servlet-mapping>
-        <servlet-name>org.apache.jsp.update_jsp</servlet-name>
-        <url-pattern>/update.jsp</url-pattern>
+        <servlet-name>org.apache.jsp.admin_002ddetails_jsp</servlet-name>
+        <url-pattern>/admin-details.jsp</url-pattern>
     </servlet-mapping>
 
 <!-- JSPC servlet mappings end -->
@@ -133,6 +153,33 @@
     <servlet-mapping>
         <servlet-name>RemoveAccountController</servlet-name>
         <url-pattern>/RemoveAccountController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateController</servlet-name>
+        <servlet-class>Controller.UpdateController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateController</servlet-name>
+        <url-pattern>/UpdateController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayController</servlet-name>
+        <servlet-class>Controller.DisplayController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayController</servlet-name>
+        <url-pattern>/DisplayController</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayDetailsController</servlet-name>
+        <servlet-class>Controller.DisplayDetailsController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayDetailsController</servlet-name>
+        <url-pattern>/DisplayDetailsController</url-pattern>
     </servlet-mapping>
 
 </web-app>

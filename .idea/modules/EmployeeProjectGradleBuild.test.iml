@@ -6,4 +6,9 @@
     <option name="gradleModuleDir" value="E:\WorkSpace\Accioproject\Spring2\EmployeeProjectGradleBuild" />
     <option name="webAppDir" value="src/main/webapp" />
   </component>
+  <component name="FacetManager">
+    <facet type="app-engine-standard" name="Google App Engine Standard">
+      <configuration />
+    </facet>
+  </component>
 </module>

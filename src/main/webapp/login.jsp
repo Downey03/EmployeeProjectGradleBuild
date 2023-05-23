@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,15 +7,20 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-form">
-        <form action="LoginController" method="get">
-            <label for="id">Id :</label>
-            <input type="text" name="id" placeholder="Enter Your Id">
-            <br><br>
-            <label for="password">Password :</label>
-            <input type="password" name="password" placeholder="Enter Your Password">
-            <button type="submit">Submit</button>
-        </form>
+    <nav class="login-nav">
+        <a href="./home.jsp">Home</a>
+    </nav>
+    <div class="login-container">
+        <div class="login-form">
+            <form action="LoginController" method="get">
+                <label for="id">ID</label><br>
+                <input type="text" name="id" placeholder="Enter Your Id">
+                <br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" placeholder="Enter Your Password"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 </body>
 </html>

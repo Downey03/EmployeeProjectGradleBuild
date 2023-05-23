@@ -14,11 +14,9 @@
         response.setDateHeader("Expires", 0);
         if(request.getSession().getAttribute("sessionId") == null) {
         response.sendRedirect(request.getContextPath()+"/index.jsp");
-        System.out.println("inredirect inside if");
         } %>
         <p>asf</p>
     <%  String redirection =(String) request.getParameter("redirect");
-    System.out.println("inredirect");
     if(redirection==null)   redirection = (String) request.getAttribute("redirect");
     request.getRequestDispatcher(redirection).forward(request,response);
     %>

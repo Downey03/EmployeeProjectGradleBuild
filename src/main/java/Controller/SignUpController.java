@@ -15,7 +15,8 @@ public class SignUpController extends HttpServlet {
     private ServiceInterface serviceInstance;
     @Override
     public void init() throws ServletException {
-        serviceInstance = new ServiceImple();
+        serviceInstance = ServiceInterface.getInstance();
+      //  serviceInstance.generateAdmin();
     }
 
     protected void addEmployee(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

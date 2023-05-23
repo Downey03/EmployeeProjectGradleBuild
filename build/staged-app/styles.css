@@ -3,21 +3,169 @@
 *{
     margin: 0;
     font-family:'Inter','serif';
+}
+
+*::-webkit-scrollbar {
+    display: none;
+  }
+.index-nav,.admin-nav,.details-nav{
+    color: white;
+    background-color: rgb(41, 41, 41);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.index-main>.container,.details-container{
+    background-color: rgb(175 175 175 / 87%);
+    height: 100vh;
+}
+
+.index-nav>.links{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.index-nav>.links>a,.details-nav>a,.admin-nav>a{
+    text-decoration: none;
+    color:azure ;
+}
+
+.index-nav>.links>a:hover,.details-nav>a:hover,.admin-nav>a:hover{
+    cursor: pointer;
+    color: rgb(52, 157, 255);
+}
+
+.login-nav,.signup-nav,.profile-nav{
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding-left: 70px;
+    padding-right: 70px;
+    position: sticky;
+    top: 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-a{
+.login-nav>a,.signup-nav>a,.profile-nav>a{
+    color: white;
     text-decoration: none;
+}
+
+.login-nav>a:hover,.signup-nav>a:hover,.profile-nav>a:hover{
+    cursor: pointer;
+    color: rgb(52, 157, 255);
+}
+
+
+.login-container,.admin-container,.signup-container,.profile-container{
+    background-color: rgba(175, 175, 175, 0.871);
+    height: 100vh;
+    padding: 30px;
+}
+.login-container>.login-form,.signup-container>.signup-form,.profile-container>.profile-form{
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.login-container>.login-form label,.signup-container>.signup-form label,.profile-container>.profile-form label{
+    font-weight: 500;
+}
+
+.login-container>.login-form input,.signup-container>.signup-form input,.profile-container>.profile-form input{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.login-container>.login-form input:focus,.signup-container>.signup-form input:focus,.profile-container>.profile-form input:focus{
+    outline: 3px solid rgb(0, 140, 255) ;
+    outline-offset: -3px;
+}
+.login-container>.login-form input[type="submit"],.signup-container>.signup-form input[type="submit"],.profile-container>.profile-form input[type="submit"]{
+    background-color: rgb(62, 62, 62);
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.login-container>.login-form input[type="submit"]:focus,.signup-container>.signup-form input[type="submit"]:focus,.profile-container>.profile-form input[type="submit"]:focus{
+    outline: 1px solid rgb(62, 62, 62);
+  
+}
+.login-container>.login-form input[type="submit"]:hover,.signup-container>.signup-form input[type="submit"]:hover,.profile-container>.profile-form input[type="submit"]:hover{
+    cursor: pointer;
+    color: rgb(52, 157, 255);
+}
+.login-container>.login-form input:not(input[type="submit"]),.signup-container>.signup-form input:not(input[type="submit"]),.profile-container>.profile-form input:not(input[type="submit"]){
+    background-color: rgb(255, 255, 255);
+}
+
+.java {
+   display: none;
+}
+
+.home-nav{
+    color: white;
+    background-color: rgb(41, 41, 41);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.home-nav>div>a{
+    color: white;
+    text-decoration: none;
+}
+
+.home-nav>div>a:hover{
+    cursor: pointer;
+    color: rgb(52, 157, 255);
+}
+
+.home-main{
+    background-color: rgb(175 175 175 / 87%);
+    height: 100%;
+}
+
+.details-container{
+    padding: 30px;
+}
+
+.details-container>.container{
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.871);
+}
+.details-container>.container>table{
+   
+    border: solid 1px black;
+    width: 100%;
+}
+
+td{
+    text-align: center;
+}
+
+th{
     border: 1px solid black;
-    box-shadow: 0px 0px 5px 5px  black;
-    background-color: rgb(173, 173, 173);
-    color: rgb(93, 93, 93);
-    transition: 0.2s;
 }
-
-a:hover{
-    background-color: rgb(93, 93, 93) ;
-    color: rgb(173, 173, 173);
-    box-shadow: 0px 0px 5px 5px  rgba(93, 93, 93,0.6);
-}
-

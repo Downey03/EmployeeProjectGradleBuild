@@ -13,17 +13,17 @@ public class RemoveAccountController extends HttpServlet {
     private ServiceInterface serviceInstance;
     @Override
     public void init() throws ServletException {
-        serviceInstance = new ServiceImple();
+        serviceInstance = ServiceInterface.getInstance();
     }
 
     protected void removeAccount(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try{
-            serviceInstance.removeEmployee((int)req.getSession().getAttribute("sessionId"));
+            serviceInstance.removeEmployee(Integer.parseInt((String)req.getSession().getAttribute("sessionId")));
+            resp.sendRedirect(req.getContextPath()+"/index.jsp");
         }catch (Exception e){
             req.setAttribute("msg",e.getMessage());
             req.getRequestDispatcher("index.jsp").forward(req,resp);
         }
-        resp.sendRedirect(req.getContextPath()+"/index.jsp");
     }
 
     @Override

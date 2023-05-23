@@ -8,18 +8,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="SignUpController" autocomplete="off" method="post">
-        <label for="name">Name</label>
-        <input type="text" name="name" placeholder="Enter Your Name" >
-        <br><br>
-        <label for="password">Password</label>
-        <input type="password" name="password" placeholder="Choose a password" >
-        <br><br>
-        <label for="mobile">Mobile</label>
-        <input type="tel" name="mobile" placeholder="Enter Your Number">
-        <br><br>
-        <button type="submit">SignUp</button>
-    </form>
-    
+    <nav class="signup-nav">
+        <a href="./home.jsp">Home</a>
+    </nav>
+    <div class="signup-container">
+        <div class="signup-form">
+            <form action="SignUpController" autocomplete="off" method="post">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Enter Your Name" >
+                <br><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Choose a password" >
+                <br><br>
+                <label for="mobile">Mobile</label>
+                <input type="tel" name="mobile" placeholder="Enter Your Number">
+                <br><br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
